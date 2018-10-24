@@ -1,0 +1,16 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: knativeproxy
+spec:
+  runLatest:
+    configuration:
+      revisionTemplate:
+        spec:
+          container:
+            image: docker.io/sjwoodman/knativeproxy
+            env:
+            - name: KAFKA_BOOTSTRAP_SERVERS
+              value: "my-cluster-kafka-bootstrap.myproject.svc.cluster.local:9092"
+            - name: KAFKA_TOPIC
+              value: "test"

@@ -1,0 +1,13 @@
+apiVersion: "streamzi.io/v1"
+kind: Processor
+metadata:
+  name: uo-websocket-client
+spec:
+  displayName: "KnativeServingProxy"
+  description: "Proxies to Knative Serving Functions"
+  imageName: "sjwoodman/knativeproxy"
+  inputs:
+  - "input-data"
+  outputs:
+  - "output-data"
+  settings:

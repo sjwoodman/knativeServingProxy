@@ -1,1 +1,1 @@
-# KNative Serving Proxy for Red Hat EventFlow# knativeServingProxy
+# KNative Serving Proxy for Red Hat EventFlow
