@@ -10,4 +10,6 @@ spec:
   - "input-data"
   outputs:
   - "output-data"
-  settings:
+  settings:{
+  url: "",
+  host: ""}
